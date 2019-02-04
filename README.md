@@ -182,7 +182,7 @@ supports:
 
 ```
 Bats x.y.z
-Usage: bats [-cr] [-f <regex>] [-p | -t] <test>...
+Usage: bats [-cr] [-f <regex>] [-j <jobs>] [-p | -t] <test>...
        bats [-h | -v]
 
   <test> is the path to a Bats test file, or the path to a directory
@@ -191,6 +191,7 @@ Usage: bats [-cr] [-f <regex>] [-p | -t] <test>...
   -c, --count      Count the number of test cases without running any tests
   -f, --filter     Filter test cases by names matching the regular expression
   -h, --help       Display this help message
+  -j, --jobs       Number of parallel jobs to run (requires GNU parallel)
   -p, --pretty     Show results in pretty format (default for terminals)
   -r, --recursive  Include tests in subdirectories
   -t, --tap        Show results in TAP format
